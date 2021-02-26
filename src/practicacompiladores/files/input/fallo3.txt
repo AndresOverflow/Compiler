@@ -1,0 +1,7 @@
+function none main() {
+	
+	num : int = (1 / 0).
+	output(num).
+}
+
+call_main(main).

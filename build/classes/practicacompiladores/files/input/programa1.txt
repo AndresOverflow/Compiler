@@ -1,0 +1,26 @@
+// Function without parameters
+function int getInputNum() {
+	num : int = input(). // Standard input
+	return num.
+}
+
+// Function with parameters and return and integer
+function int getSquare(num : int) {
+
+	result : int = (num * num). // Arithmetic operation
+
+	return result.
+}
+
+// Main function, without parameters and return value.
+function none main() {
+	output("Put a number: "). // Standard output
+
+	numFact : int = call(getInputNum). // Call function without parameters
+	result : int = call(getSquare, numFact). // Call function with parameters
+
+	output("Square: ").
+	output(result).
+}
+
+call_main(main).

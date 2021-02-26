@@ -1,0 +1,39 @@
+
+function int recursiveFact(num: int) {
+	result : int = 0.
+
+	if({num == 1}) {
+		result = 1.
+	} else {
+
+		decrement : int = (num - 1).
+		factResult : int = call(recursiveFact, decrement).
+		
+		result = (num * factResult).
+	}
+
+	return result.
+}
+
+
+function int iterativeFact(num : int, incr : int) { 
+	result : int = 1.
+
+	while ({num != 1}) { // Relational operation
+		result = ((result * num) * incr). // Multiple arithmetic operations
+		num = (num - 1).
+	}
+
+	return result.
+}
+
+
+function none main() {
+	//result : int = call(iterativeFact, 5, 1).
+	result : int = call(recursiveFact, 6).
+
+	output("Result factorial: ").
+	output(result).
+}
+
+call_main(main).

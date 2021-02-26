@@ -1,0 +1,10 @@
+function none main() {
+	
+	string1 : string = "asd".
+	string2 : string = "hola, com anam?".
+
+	string1 = string2.
+	output(string1).
+}
+
+call_main(main).
